@@ -1,14 +1,14 @@
 /* === Tokens === */
 :root {
-  --cor-primaria: #7A3E1F;
-  --cor-primaria-escura: color-mix(in oklab, #7A3E1F 80%, black);
-  --cor-fundo: #fdfaf5;
+  --cor-primaria: #500101;
+  --cor-primaria-escura: color-mix(in oklab, #6d1f00 80%, rgb(0, 0, 0));
+  --cor-fundo: url(../imagens/im.png);
   --cor-superficie: #ffffff;
-  --cor-texto: #1a1a1a;
-  --cor-muted: #555;
-  --cor-borda: #e6e1d8;
+  --cor-texto: #000000;
+  --cor-muted: #6e2a2a;
+  --cor-borda: #380000;
   --raio: 12px;
-  --sombra: 0 6px 20px rgba(0,0,0,.08);
+  --sombra: 0 6px 20px rgba(41, 0, 0, 0.559);
   --max: 1100px;
 }
 
@@ -16,7 +16,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background: var(--cor-fundo);
   color: var(--cor-texto);
   line-height: 1.6;
