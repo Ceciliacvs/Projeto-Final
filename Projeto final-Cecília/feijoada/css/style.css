@@ -2,7 +2,7 @@
 :root {
   --cor-primaria: #500101;
   --cor-primaria-escura: color-mix(in oklab, #6d1f00 80%, rgb(0, 0, 0));
-  --cor-fundo: url(../imagens/im.png);
+  --cor-fundo: url(../img/im.png);
   --cor-superficie: #ffffff;
   --cor-texto: #000000;
   --cor-muted: #6e2a2a;
@@ -75,13 +75,44 @@ body {
   background: var(--cor-superficie);
   border: 1px solid var(--cor-borda);
   border-radius: var(--raio);
-  padding: 1.25rem;
+  padding: 0;                          /* removido para imagem encostar nas bordas */
+  overflow: hidden;                    /* imagem respeita o border-radius */
   box-shadow: var(--sombra);
   transition: transform .2s;
+  display: flex;
+  flex-direction: column;
 }
 .card:hover { transform: translateY(-3px); }
-.card h3 { margin: 0 0 .5rem; color: var(--cor-primaria); font-size: 1.1rem; }
-.card .preco { font-weight: 700; color: var(--cor-primaria-escura); }
+
+/* === Imagem do card === */
+.card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;                   /* recorta sem distorcer */
+  display: block;
+}
+
+/* === Conteúdo interno do card === */
+.card-body {
+  padding: .85rem 1.25rem .25rem;
+  flex: 1;                             /* empurra o preço para o fundo */
+}
+.card h3, .card-nome {
+  margin: 0 0 .5rem;
+  color: var(--cor-primaria);
+  font-size: 1.1rem;
+}
+.card-desc {
+  margin: 0;
+  font-size: .9rem;
+  color: var(--cor-muted);
+}
+.card .preco, .card-preco {
+  display: block;
+  padding: .5rem 1.25rem .85rem;
+  font-weight: 700;
+  color: var(--cor-primaria-escura);
+}
 
 /* === Form === */
 .form { max-width: 520px; }
