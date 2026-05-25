@@ -9,7 +9,7 @@ const ITENS = [
   { tipo: "cardapio",  nome: "Bisteca",             descricao: "Carne de porco temperada.", preco: "R$ 8,00", imagem: "imagens/bisteca.PNG" },
   { tipo: "cardapio",  nome: "Couve Refogada",      descricao: "Passada no azeite e alho.", preco: "R$ 10,00", imagem: "imagens/couve.PNG" },
   { tipo: "bebidas",   nome: "Caipirinha",          descricao: "Uma bebida alcoólica com cachaça e limão.", preco: "R$ 10,00", imagem: "imagens/c.PNG" },
-   { tipo: "bebidas",   nome: "Refrigerante",          descricao: "Lata 350ml Coca-Cola.", preco: "R$ 10,00", imagem: "img/refri.PNG"},
+   { tipo: "bebidas",   nome: "Refrigerante",          descricao: "Lata 350ml Coca-Cola.", preco: "R$ 10,00", imagem: "imagens/refri.PNG"},
       { tipo: "bebidas",   nome: "Suco Natural",          descricao: "Suco natural sabores: Laranja, Limão, Goiaba, Morango, Manga 350ml.", preco: "R$ 10,00" , imagem: "imagens/suco.PNG"},
   { tipo: "sobremesa", nome: "Pudim",               descricao: "Pudim cremoso de leite condensado.", preco: "R$ 8,00", imagem: "imagens/pudim.PNG" },
   { tipo: "sobremesa", nome: "Cocada", descricao: " Cocada de coco-queimado cremoso de leite condensado.", preco: "R$ 8,00", imagem: "imagens/cocada.PNG"},
