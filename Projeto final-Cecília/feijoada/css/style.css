@@ -2,7 +2,7 @@
 :root {
   --cor-primaria: #500101;
   --cor-primaria-escura: color-mix(in oklab, #6d1f00 80%, rgb(0, 0, 0));
-  --cor-fundo: url(img/im.png);
+  --cor-fundo: url(imagens/im.png);
   --cor-superficie: #ffffff;
   --cor-texto: #000000;
   --cor-muted: #6e2a2a;
